@@ -2,14 +2,14 @@ version: '3'
 services:
   flask:
       container_name: flask
-      image: "flask:test"
+      image: "21jun/flask:test"
       ports:
        - "5000:5000"
       networks:
       - backend
   nginx:
       container_name: nginx
-      image: "nginx:test"
+      image: "21jun/nginx:test"
       ports:
        - "80:80"
       networks:
